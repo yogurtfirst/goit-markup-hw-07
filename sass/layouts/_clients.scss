@@ -1,0 +1,30 @@
+.clients__title {
+    margin-bottom: 50px;
+}
+
+.clients__list {
+    @include cflex();
+    column-gap: 30px;
+}
+
+.clients__item {
+    width: 170px;
+    height: 92px;
+}
+
+.clients__link {
+    width: 100%;
+    height: 100%;
+    @include ccflex();
+    color: var(--item-color-main);
+    border: 1px solid currentColor;
+    border-radius: 4px;
+    fill: currentColor;
+
+    @include transition('color');
+
+    &:hover,
+    &:focus {
+        color: var(--item-color-accent);
+    }
+}

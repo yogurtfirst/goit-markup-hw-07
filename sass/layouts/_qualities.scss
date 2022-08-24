@@ -1,0 +1,35 @@
+.qualities {
+    padding-bottom: 0px;
+}
+
+.qualities__list {
+    @include cflex();
+    column-gap: 30px;
+}
+
+.qualities__item {
+    width: 270px;
+}
+
+.qualities__object {
+    background-color: var(--background-color-secondary);
+    @include ccflex();
+    width: 270px;
+    height: 120px;
+    border-radius: 4px;
+}
+
+.qualities__title {
+    @include font(700, 14px, 1.14, 0.03em);
+    text-transform: uppercase;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.qualities__txt {
+    color: var(--font-color-secondary);
+    @include font(400, 14px, 1.71, 0.03em);
+
+    margin-bottom: 0px;
+}
